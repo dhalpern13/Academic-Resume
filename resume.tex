@@ -1,0 +1,116 @@
+\documentclass{article}
+\usepackage{scimisc-cv}
+\usepackage[hidelinks]{hyperref}
+\usepackage{etoolbox}
+
+\title{Daniel Halpern's Resume}
+\author{Daniel Halpern}
+\date{\today}
+
+\providetoggle{uselinks}
+\settoggle{uselinks}{true}
+\newcommand{\link}[2]{\iftoggle{uselinks}{\href{#1}{#2}}{#2}}
+
+%% These are custom commands defined in scimisc-cv.sty
+\cvname{Daniel Halpern}
+\cvpersonalinfo{
+\link{https://goo.gl/maps/Bz13tyVDPVDmCh2n9}{210 McCaul St, Toronto, ON, M5T1W5} \cvinfosep
+\link{tel:16072274045}{+1 (607) 227-4045} \cvinfosep
+\link{mailto:dhalpern@g.harvard.edu}{dhalpern@g.harvard.edu} \cvinfosep
+\link{https://dhalpern13.github.io}{https://dhalpern13.github.io}
+}
+
+
+
+\begin{document}
+
+
+% \maketitle %% This is LaTeX's default title constructed from \title,\author,\date
+
+    \makecvtitle %% This is a custom command constructing the CV title from \cvname, \cvpersonalinfo
+
+    \section{Education}
+
+    \cvsubsection{Harvard Unviersity}[Cambridge, MA]
+    [Ph.D. in Computer Science][August 2020 to present]
+    \begin{itemize}
+        \item Advisor: \link{http://procaccia.info}{Ariel Procaccia}
+    \end{itemize}
+
+    \cvsubsection{University of Toronto}[Toronto, ON]
+    [B.Sc. in Computer Science with High Distiction][September 2016 to June 2020]
+    \begin{itemize}
+        \item Major GPA: 4.0/4.0, Cumulative GPA: 3.96/4.0
+    \end{itemize}
+
+
+    \section{Work Experience}
+    \cvsubsection{Carnegie Mellon University}[Pittsburgh, PA]
+    [Research Intern][June 2019 - August 2019]
+    \begin{itemize}
+        \item Worked with Professor Ariel Procaccia
+        \item Research in topics related to Algorithmic Game Theory
+    \end{itemize}
+
+    \cvsubsection{CryptoNumerics}[Toronto, ON]
+    [Software Developer][April 2018 - July 2020]
+    \begin{itemize}[noitemsep,nolistsep]
+        \item One of the first employees at start up working on machine learning and cryptography
+        \item Leader of several projects in Python, Java, and Javascript
+    \end{itemize}
+
+
+    \section{Teaching Experience}
+    \cvsubsection{University of Toronto}[Toronto, ON]
+    [Undergraduate Teaching Assistant][Spring 2020]
+    \begin{itemize}
+        \item Data Structures and Analysis (CSC263)
+    \end{itemize}
+
+    \cvsubsection{University of Toronto}[Toronto, ON]
+    [Undergraduate Teaching Assistant][Spring 2020]
+    \begin{itemize}
+        \item Algorithm Design, Analysis \& Complexity (CSC373)
+    \end{itemize}
+
+
+    \section{Awards}
+    \begin{itemize}
+        \setlength\itemsep{.7ex}
+        \item \textsl{University of Toronto Computer Science Undergraduate Research Award} \hfill 2020\\
+        \$6000 award for undergraduate summer research
+        \item \textsl{Harold Willet Stewart Memorial Scholarship} \hfill 2020\\
+        \$2080 graduating year award
+        \item \textsl{Anna And Alex Beverly Memorial Fellowship} \hfill 2020\\
+        \$1000 graduating year award
+        \item \textsl{Samuel Beatty In Course Scholarship} \hfill 2019\\
+        \$1500 given for academic achievement
+        \item \textsl{C. L. Burton Scholarship For Mathematics And Physical Sciences} \hfill 2019\\
+        \$500 given for academic achievement
+        \item \textsl{Dr. James A. \& Connie P. Dickson Scholarship In Science \& Mathematics} \hfill 2018\\
+        \$500 given for academic achievement
+        \item \textsl{Alan Milne McCombie Scholarship} \hfill 2017\\
+        \$250 given for academic achievement
+        \item \textsl{University of Toronto President's Scholars of Excellence Program} \hfill 2016\\
+        \$10,000 incoming student scholarship
+    \end{itemize}
+
+
+    \section{Publications}
+    \begin{itemize}
+        \setlength\itemsep{3ex}
+        \item D. Halpern, A. Procaccia, A. Psomas, and N. Shah. \textit{Fair Division with Binary Valuations: One
+        Rule to Rule
+        Them All}. In preparation.
+
+        \item D. Halpern, N. Shah, and V. Gkatzelis. \textit{Resolving the Optimal Metric Distortion Conjecture}.
+        Proc. of
+        61st Annual IEEE Symposium on Foundations of Computer Science (\textbf{FOCS}), 2020. Forthcoming.
+
+        \item D. Halpern and N. Shah. \textit{Fair Division with Subsidy}. Proceedings of the 12th International Symposium on
+        Algorithmic Game Theory (\textbf{SAGT}), 2019, pp. 374-389
+
+    \end{itemize}
+
+
+\end{document}
