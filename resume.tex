@@ -10,6 +10,7 @@
 \providetoggle{uselinks}
 \settoggle{uselinks}{true}
 \newcommand{\link}[2]{\iftoggle{uselinks}{\href{#1}{#2}}{#2}}
+\newcommand{\itlink}[2]{\link{#1}{\textit{#2}}}
 
 %% These are custom commands defined in scimisc-cv.sty
 \cvname{Daniel Halpern}
@@ -100,20 +101,20 @@
     \section{Publications}
     \begin{itemize}
         \setlength\itemsep{1.3ex}
-        \item D. Halpern and N. Shah \textit{Fair and Efficient Resource Allocation with Partial Information}.
-        Proc. of 30th International Joint Conference on Artificial Intelligence (\textbf{IJCAI}), 2021. Forthcoming
+        \item D. Halpern and N. Shah \itlink{https://dhalpern13.github.io/files/distortion-fair-division.pdf}{Fair and Efficient Resource Allocation with Partial Information}.
+        Proc. of 30th International Joint Conference on Artificial Intelligence (\textbf{IJCAI}), pp. 224-230, 2021. 
         
-        \item D. Halpern, G. Kehne, D. Peters, A. D. Procaccia, N. Shah, P. Skowron. \textit{Aggregating Binary Judgments Ranked By Accuracy}.
+        \item D. Halpern, G. Kehne, D. Peters, A. D. Procaccia, N. Shah, P. Skowron. \itlink{https://dhalpern13.github.io/files/ranked-binary-judgments.pdf}{Aggregating Binary Judgments Ranked By Accuracy}.
         Proc. of 35th AAAI Conference on Artificial Intelligence (\textbf{AAAI}), pp. 5456-5463, 2021. 
 
-        \item D. Halpern, A. D. Procaccia, A. Psomas, and N. Shah. \textit{Fair Division with Binary Valuations: One
+        \item D. Halpern, A. D. Procaccia, A. Psomas, and N. Shah. \itlink{https://dhalpern13.github.io/files/binary-mnw.pdf}{Fair Division with Binary Valuations: One
         Rule to Rule
         Them All}. Proc. of 16th Conference on Web and Internet Economics (\textbf{WINE}), pp. 370-383, 2020.
         
-        \item V. Gkatzelis, D. Halpern, and N. Shah. \textit{Resolving the Optimal Metric Distortion Conjecture}.
+        \item V. Gkatzelis, D. Halpern, and N. Shah. \itlink{https://dhalpern13.github.io/files/optimal-metric-distortion.pdf}{Resolving the Optimal Metric Distortion Conjecture}.
         Proc. of 61st Annual IEEE Symposium on Foundations of Computer Science (\textbf{FOCS}), pp. 1427-1438, 2020.
 
-        \item D. Halpern and N. Shah. \textit{Fair Division with Subsidy}. Proceedings of the 12th International Symposium on
+        \item D. Halpern and N. Shah. \itlink{https://dhalpern13.github.io/files/fair-division-subsidy-full.pdf}{Fair Division with Subsidy}. Proceedings of the 12th International Symposium on
         Algorithmic Game Theory (\textbf{SAGT}), pp. 374-389, 2019.
 
     \end{itemize}
