@@ -12,7 +12,7 @@
 \providetoggle{uselinks}
 \settoggle{uselinks}{true}
 \newcommand{\link}[2]{\iftoggle{uselinks}{\href{#1}{#2}}{#2}\xspace}
-\newcommand{\itlink}[2]{\link{https://daniel-halpern.com/files/#1.pdf}{\textit{#2}}}
+\newcommand{\websitelink}[2]{\link{https://daniel-halpern.com/files/#1.pdf}{#2}}
 
 \newcommand{\me}{\link{https://daniel-halpern.com}{D. Halpern}}
 \newcommand{\nisarg}{\link{https://www.cs.toronto.edu/~nisarg}{N. Shah}}
@@ -33,7 +33,7 @@
 \newcommand{\bailey}{\link{https://sites.google.com/andrew.cmu.edu/baileyflanigan/home}{B. Flanigan}}
 \newcommand{\adam}{\link{https://polisci.mit.edu/people/adam-berinsky}{A. Berinsky}}
 \newcommand{\gerdus}{\link{http://www.gerdusbenade.com}{G. Benadè}}
-\newcommand{\manuel}{\link{https://ei.is.mpg.de/~mwuthrich}{M. W\"uthrich}}
+\newcommand{\manuel}{\link{https://ei.is.mpg.de/~mwuthrich}{M. Wüthrich}}
 
 %% These are custom commands defined in scimisc-cv.sty
 \cvname{Daniel Halpern}
@@ -111,39 +111,7 @@
     \section{Publications}
     \begin{itemize}
         \setlength\itemsep{.8ex}
-        \item \me, \greg, \ariel, \jamie, and \manuel. \itlink{representation-incomplete}{Representation with Incomplete Votes}. Working Paper.
-        \item \me, \dad, \ali, \elchanan, \ariel, and \manon. \itlink{liquid-defense}{In Defense of Liquid Democracy}. Working Paper.
-        \item \bailey, \me, and \alex. \itlink{smoothed-analysis}{Smoothed Analysis of Social Choice Revisited}. Working Paper.
-
-        \item \me and \ariel. \itlink{unbiased-information}{Unbiased Information Packets}. Working Paper.
-
-        \item \gerdus, \me, and \alex. \itlink{dynamic-fair-division}{Dynamic Fair Division with Partial Information}. Proc. of 36th Conference on Neural Information Processing Systems (\textbf{NeurIPS}), 2022. Forthcoming.
-        
-        \item \manon, \me, \adam, and \ali. \itlink{liquid-in-practice}{Liquid Democracy in Practice: An Empirical Analysis of its Epistemic Performance}. Proc. of 2nd ACM conference on Equity and Access in Algorithms, Mechanisms, and Optimization (\textbf{EAAMO}), 2022. Forthcoming.
-
-        \item \allan, \me, \mohamad, and \nisarg. \itlink{distortion-top-t}{Distortion in Voting with Top-t Preferences}. Proc. of 31st International Joint Conference on Artificial Intelligence (\textbf{IJCAI}), 2022. Forthcoming.
-        
-        \item \me, \greg, and \jamie. \itlink{buyers-reveal}{Can Buyers Reveal for a Better Deal?}. Proc. of 31st International Joint Conference on Artificial Intelligence (\textbf{IJCAI}), 2022. Forthcoming.
-        
-        \item \manon, \tao, and \me. \itlink{optimal-congress}{How Many Representatives Do We Need? The Optimal Size of an Epistemic Congress}.
-        Proc. of 36th AAAI Conference on Artificial Intelligence (\textbf{AAAI}), pp. 9431-9438, 2022. 
-        
-        \item \me and \nisarg \itlink{distortion-fair-division}{Fair and Efficient Resource Allocation with Partial Information}.
-        Proc. of 30th International Joint Conference on Artificial Intelligence (\textbf{IJCAI}), pp. 224-230, 2021. 
-        
-        \item \me, \greg, \dominik, \ariel, \nisarg, and \piotr. \itlink{ranked-binary-judgments}{Aggregating Binary Judgments Ranked By Accuracy}.
-        Proc. of 35th AAAI Conference on Artificial Intelligence (\textbf{AAAI}), pp. 5456-5463, 2021. 
-
-        \item \me, \ariel, \alex, and \nisarg. \itlink{binary-mnw}{Fair Division with Binary Valuations: One
-        Rule to Rule
-        Them All}. Proc. of 16th Conference on Web and Internet Economics (\textbf{WINE}), pp. 370-383, 2020.
-        
-        \item \vasilis, \me, and \nisarg. \itlink{optimal-metric-distortion}{Resolving the Optimal Metric Distortion Conjecture}.
-        Proc. of 61st Annual IEEE Symposium on Foundations of Computer Science (\textbf{FOCS}), pp. 1427-1438, 2020.
-
-        \item \me and \nisarg. \itlink{fair-division-subsidy-full}{Fair Division with Subsidy}. Proceedings of the 12th International Symposium on
-        Algorithmic Game Theory (\textbf{SAGT}), pp. 374-389, 2019.
-
+        \input{publications}
     \end{itemize}
     
     \section{Teaching Experience}
