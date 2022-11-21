@@ -2,7 +2,8 @@
 \usepackage{scimisc-cv}
 \usepackage[hidelinks]{hyperref}
 \usepackage{etoolbox}
-%\usepackage{etaremune}
+\usepackage{etaremune}
+
 \usepackage{xspace}
 
 \title{Daniel Halpern's Resume}
@@ -13,27 +14,6 @@
 \settoggle{uselinks}{true}
 \newcommand{\link}[2]{\iftoggle{uselinks}{\href{#1}{#2}}{#2}\xspace}
 \newcommand{\websitelink}[2]{\link{https://daniel-halpern.com/files/#1.pdf}{#2}}
-
-\newcommand{\me}{\link{https://daniel-halpern.com}{D. Halpern}}
-\newcommand{\nisarg}{\link{https://www.cs.toronto.edu/~nisarg}{N. Shah}}
-\newcommand{\vasilis}{\link{https://www.cs.drexel.edu/~gkatz/}{V. Gkatzelis}}
-\newcommand{\ariel}{\link{http://procaccia.info}{A. D. Procaccia}}
-\newcommand{\alex}{\link{https://www.alexpsomas.com}{A. Psomas}}
-\newcommand{\greg}{\link{https://gregorykehne.com}{G. Kehne}}
-\newcommand{\dominik}{\link{https://dominik-peters.de}{D. Peters}}
-\newcommand{\piotr}{\link{https://www.mimuw.edu.pl/~ps219737/}{P. Skowron}}
-\newcommand{\manon}{\link{https://manrev.github.io/manon/}{M. Revel}}
-\newcommand{\tao}{\link{https://tao-l.github.io}{T. Lin}}
-\newcommand{\jamie}{\link{http://www.jamie.tuckerfoltz.com}{J. Tucker-Foltz}}
-\newcommand{\dad}{\link{https://www.cs.cornell.edu/home/halpern/}{J. Y. Halpern}}
-\newcommand{\ali}{\link{https://jadbabaie.mit.edu}{A. Jadbabaie}}
-\newcommand{\elchanan}{\link{https://math.mit.edu/~elmos/}{E. Mossel}}
-\newcommand{\allan}{\link{https://www.cs.toronto.edu/~bor/}{A. Borodin}}
-\newcommand{\mohamad}{\link{https://www.cs.toronto.edu/~latifian/}{M. Latifian}}
-\newcommand{\bailey}{\link{https://sites.google.com/andrew.cmu.edu/baileyflanigan/home}{B. Flanigan}}
-\newcommand{\adam}{\link{https://polisci.mit.edu/people/adam-berinsky}{A. Berinsky}}
-\newcommand{\gerdus}{\link{http://www.gerdusbenade.com}{G. Benadè}}
-\newcommand{\manuel}{\link{https://ei.is.mpg.de/~mwuthrich}{M. Wüthrich}}
 
 %% These are custom commands defined in scimisc-cv.sty
 \cvname{Daniel Halpern}
@@ -47,7 +27,6 @@
 
 
 \begin{document}
-
 
 % \maketitle %% This is LaTeX's default title constructed from \title,\author,\date
 
@@ -109,10 +88,11 @@
 
 
     \section{Publications}
-    \begin{itemize}
-        \setlength\itemsep{.8ex}
+    \begin{etaremune}
+    	[itemsep=-.5ex,
+    	leftmargin=3.5ex]
         \input{publications}
-    \end{itemize}
+    \end{etaremune}
     
     \section{Teaching Experience}
     \cvsubsection{Harvard University}[Cambridge, MA]
@@ -138,16 +118,17 @@
     \begin{itemize}
     	\item LAMSADE Mini-Workshop on Cooperative Games, Social Choice, and Fair Division \hfill September, 2022
     \end{itemize}
+    
+    \cvsubsection{Fair and Efficient Resource Allocation with Incomplete Votes}
+    \begin{itemize}
+    	\item Drexel Theory Seminar \hfill May, 2021
+    \end{itemize}
+    
     \cvsubsection{Resolving the Optimal Metric Distortion Conjecture}
     \begin{itemize}
     	\item Harvard EconCS Seminar \hfill September, 2020
     	\item Cornell Theory Seminar \hfill November, 2020
     	\item Highlights Beyond EC \hfill July, 2021
-    \end{itemize}
-    
-    \cvsubsection{Fair and Efficient Resource Allocation with Incomplete Votes}
-    \begin{itemize}
-    	\item Drexel Theory Seminar \hfill May, 2021
     \end{itemize}
     
     
